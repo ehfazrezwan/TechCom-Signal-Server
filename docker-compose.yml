@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: ${PROJET_NAME}-nginx
+    ports:
+      - '80:80'
+      
