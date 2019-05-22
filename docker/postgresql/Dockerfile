@@ -1,5 +1,5 @@
 # Pull PostGRES Alpine image
-FROM postgres:9.4-alpine
+FROM postgres:9.6-alpine
 ## Very sure that the JDBC driver needs to be on the client
 # Install JDBC driver
 # RUN apk update
