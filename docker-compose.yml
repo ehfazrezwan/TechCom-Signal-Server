@@ -6,3 +6,10 @@ services:
     container_name: ${PROJECT_NAME}-nginx
     ports:
       - '80:80'
+  redis:
+    build:
+      context: ./docker/redis
+    image: 'redis:alpine'
+    container_name: ${PROJECT_NAME}-redis
+    ports:
+      - '6379:6379'
